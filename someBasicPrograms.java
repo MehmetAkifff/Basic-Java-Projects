@@ -39,7 +39,7 @@ public class Exercise01_20210808045 {
         System.out.println("----Fifth task over----");
 
 
-        Scanner scanner1 = new Scanner(System.in);
+        try (Scanner scanner1 = new Scanner(System.in)) {
         System.out.println("please type celcius");
         double celcius = scanner1.nextDouble();
         double Fahrenheit = ((9.0 / 5.0) * celcius) + 32.0;
@@ -72,7 +72,7 @@ public class Exercise01_20210808045 {
         double minute=scanner1.nextDouble();
         double years, days;
         days = minute/ 60.0 / 24;
-        years = days / 360.0;
+        years = days / 365.25;
         System.out.println(days + " Days");
         System.out.println(years + " Years");
         System.out.println("----Ninth Task over----");
@@ -123,7 +123,7 @@ public class Exercise01_20210808045 {
         System.out.println("area of your triangle is = " + area);
         System.out.println("last task is over");
 
-
+        }
     }
 }
 
